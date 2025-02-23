@@ -44,7 +44,11 @@ class HomePage extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: users.length,
               itemBuilder: (context, index) {
-                return BubbleStory(name: users[index]);
+                return BubbleStory(
+                  name: users[index],
+                  isMe: index == 0 ? true : false,
+                  isLive: index == 1 ? true : false,
+                );
               },
             ),
           ),
