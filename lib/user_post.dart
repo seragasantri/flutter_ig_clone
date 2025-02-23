@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class UserPost extends StatelessWidget {
   const UserPost({Key? key, required this.name}) : super(key: key);
@@ -45,17 +46,27 @@ class UserPost extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Row(
-            children: [
-              const Icon(Icons.favorite_border),
-              const SizedBox(width: 8),
-              const Icon(Icons.chat_bubble_outline),
-              const SizedBox(width: 8),
-              const Icon(Icons.send_outlined),
-            ],
-          ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  SvgPicture.asset('assets/icons/d_favorite_Icons.svg'),
+                  // const Icon(Icons.favorite_border),
+                  const SizedBox(width: 8),
+                  SvgPicture.asset('assets/icons/d_message_2_Icons.svg'),
+                  // const Icon(Icons.chat_bubble_outline),
+                  const SizedBox(width: 8),
+                  SvgPicture.asset('assets/icons/d_send_2_Icons.svg'),
+                  // const Icon(Icons.send_outlined),
+                ],
+              ),
+            ),
+            SvgPicture.asset('assets/icons/d_bookmark_Icons.svg'),
+            // const Icon(Icons.bookmark_border),
+          ],
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -72,7 +83,7 @@ class UserPost extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: RichText(
             text: const TextSpan(
-              style: TextStyle(color: Colors.black),
+              // style: TextStyle(color: Colors.black),
               children: [
                 TextSpan(
                   text: 'kepala_Sekolah',
@@ -89,14 +100,17 @@ class UserPost extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           child: Text(
             'View all comments',
-            style: TextStyle(color: Colors.black54),
+            // style: TextStyle(color: Colors.black54),
           ),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           child: Text(
             '17 hours ago',
-            style: TextStyle(color: Colors.black54, fontSize: 10),
+            style: TextStyle(
+              // color: Colors.black54,
+              fontSize: 10,
+            ),
           ),
         ),
       ],

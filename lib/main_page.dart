@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ig_flutter_ui/home_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -39,29 +41,44 @@ class _MainPageState extends State<MainPage> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 0 ? Icons.home : Icons.home_outlined),
+            icon: SvgPicture.asset('assets/icons/d_home_Icons.svg'),
+
+            // icon: Icon(_selectedIndex == 0 ? Icons.home : Icons.home_outlined),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              _selectedIndex == 1 ? Icons.search : Icons.search_outlined,
-            ),
+            icon: SvgPicture.asset('assets/icons/d_search_Icons.svg'),
+            // icon: Icon(
+            //   _selectedIndex == 1 ? Icons.search : Icons.search_outlined,
+            // ),
             label: 'Search',
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              _selectedIndex == 2 ? Icons.add_box : Icons.add_box_outlined,
-            ),
+            icon: SvgPicture.asset('assets/icons/d_video_Icons.svg'),
+            // icon: Icon(
+            //   _selectedIndex == 2 ? Icons.add_box : Icons.add_box_outlined,
+            // ),
             label: 'Video',
           ),
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 3 ? Icons.shop : Icons.shop_outlined),
+            icon: SvgPicture.asset('assets/icons/d_shop_Icons.svg'),
+            // icon: Icon(_selectedIndex == 3 ? Icons.shop : Icons.shop),
             label: 'Shop',
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              _selectedIndex == 4 ? Icons.person : Icons.person_outlined,
+            icon: CircleAvatar(
+              radius: 13,
+              backgroundColor: Colors.white,
+              child: CircleAvatar(
+                radius: 12,
+                backgroundImage: NetworkImage(
+                  'https://i.pravatar.cc/1050?img=10',
+                ),
+              ),
             ),
+            // Icon(
+            //   _selectedIndex == 4 ? Icons.person : Icons.person_outlined,
+            // ),
             label: 'Account',
           ),
         ],
