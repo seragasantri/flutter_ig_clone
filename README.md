@@ -1,7 +1,8 @@
 ## Feature
 
 ![alt text](<Simulator Screenshot - iPhone 16 - 2025-02-23 at 19.38.52.png>)
-![alt text](<Simulator Screenshot - iPhone 16 - 2025-02-24 at 05.37.25.png>)
+
+![alt text](<Simulator Screenshot - iPhone 16 - 2025-02-24 at 08.21.57.png>)
 
 ## video
 
