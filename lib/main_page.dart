@@ -41,7 +41,7 @@ class _MainPageState extends State<MainPage> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/d_home_Icons.svg'),
+            icon: SvgPicture.asset('assets/icons/home_Icons.svg'),
 
             // icon: Icon(_selectedIndex == 0 ? Icons.home : Icons.home_outlined),
             label: 'Home',
