@@ -1,12 +1,11 @@
 ## Feature
 
 ![alt text](<Simulator Screenshot - iPhone 16 - 2025-02-23 at 19.38.52.png>)
+![alt text](<Simulator Screenshot - iPhone 16 - 2025-02-24 at 05.37.25.png>)
 
 ## video
 
 https://www.tiktok.com/@kito.ngoding/video/7474595263957585158?is_from_webapp=1&sender_device=pc&web_id=7445303026879415815
-
-![alt text](<Simulator Screenshot - iPhone 16 - 2025-02-24 at 05.37.25.png>)
 
 # ig_flutter_ui
 
